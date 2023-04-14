@@ -17,6 +17,6 @@ export class SpecItemService {
   }
 
   async findAll(): Promise<SpecItem[]> {
-    return this.specItemModel.find().exec();
+    return this.specItemModel.find().sort({ displayOrder: 1 }).exec();
   }
 }
