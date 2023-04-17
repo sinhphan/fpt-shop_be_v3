@@ -9,11 +9,4 @@ import { ObjectId, Types } from 'mongoose';
 export class UpdateProductDto extends PartialType(CreateProductDto) {
   attributeSpecItems?: Types.ObjectId[];
   promotionItems?: Types.ObjectId[];
-  name?: string;
-  brandName?: string;
-  nameAscii?: string;
-  urlPicture?: string;
-  labelInst?: string;
-  labelFlashSale?: string;
-  productVariant?: CreateProductVariantDto;
 }
